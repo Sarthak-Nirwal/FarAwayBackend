@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "incident_id": "INC001",
+    "type": "Route Blocked",
+    "description": "Rajpur Rd flooded knee-deep",
+    "source": "Field Responder",
+    "trust_score": 0.88,
+    "location": null,
+    "road": "Rajpur Rd",
+    "timestamp": "2026-06-12 02:03:05",
+    "unix_time": 1781209985.2358944,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "BLOCK_ROAD",
+      "road": "Rajpur Rd",
+      "trigger_reroute": true,
+      "confidence": 0.88,
+      "reason": "High-trust source (Field Responder) — immediate action."
+    }
+  },
+  {
+    "id": 2,
+    "incident_id": "INC001",
+    "type": "New Hazard Spotted",
+    "description": "Landslide near sector 17",
+    "source": "Police Officer",
+    "trust_score": 0.85,
+    "location": "Sector 17",
+    "road": null,
+    "timestamp": "2026-06-12 02:03:05",
+    "unix_time": 1781209985.2358944,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "CREATE_NEW_INCIDENT",
+      "location": "Sector 17",
+      "confidence": 0.85,
+      "reason": "New hazard reported by Police Officer at Sector 17."
+    }
+  },
+  {
+    "id": 3,
+    "incident_id": "INC001",
+    "type": "Rescue Completed",
+    "description": "All civilians evacuated from Zone A",
+    "source": "NDRF Responder",
+    "trust_score": 0.93,
+    "location": null,
+    "road": null,
+    "timestamp": "2026-06-12 02:03:05",
+    "unix_time": 1781209985.2358944,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "MARK_RESOLVED",
+      "confidence": 0.93,
+      "reason": "Rescue confirmed by NDRF Responder."
+    }
+  },
+  {
+    "id": 4,
+    "incident_id": "INC001",
+    "type": "Route Blocked",
+    "description": "Rajpur Rd flooded knee-deep",
+    "source": "Field Responder",
+    "trust_score": 0.88,
+    "location": null,
+    "road": "Rajpur Rd",
+    "timestamp": "2026-06-12 13:55:48",
+    "unix_time": 1781252748.1141303,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "BLOCK_ROAD",
+      "road": "Rajpur Rd",
+      "trigger_reroute": true,
+      "confidence": 0.88,
+      "reason": "High-trust source (Field Responder) — immediate action."
+    }
+  },
+  {
+    "id": 5,
+    "incident_id": "INC001",
+    "type": "New Hazard Spotted",
+    "description": "Landslide near sector 17",
+    "source": "Police Officer",
+    "trust_score": 0.85,
+    "location": "Sector 17",
+    "road": null,
+    "timestamp": "2026-06-12 13:55:48",
+    "unix_time": 1781252748.127914,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "CREATE_NEW_INCIDENT",
+      "location": "Sector 17",
+      "confidence": 0.85,
+      "reason": "New hazard reported by Police Officer at Sector 17."
+    }
+  },
+  {
+    "id": 6,
+    "incident_id": "INC001",
+    "type": "Rescue Completed",
+    "description": "All civilians evacuated from Zone A",
+    "source": "NDRF Responder",
+    "trust_score": 0.93,
+    "location": null,
+    "road": null,
+    "timestamp": "2026-06-12 13:55:48",
+    "unix_time": 1781252748.1333523,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "MARK_RESOLVED",
+      "confidence": 0.93,
+      "reason": "Rescue confirmed by NDRF Responder."
+    }
+  },
+  {
+    "id": 7,
+    "incident_id": "INC001",
+    "type": "Route Blocked",
+    "description": "Rajpur Rd flooded knee-deep",
+    "source": "Field Responder",
+    "trust_score": 0.88,
+    "location": null,
+    "road": "Rajpur Rd",
+    "timestamp": "2026-06-12 17:28:29",
+    "unix_time": 1781265509.6797411,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "BLOCK_ROAD",
+      "road": "Rajpur Rd",
+      "trigger_reroute": true,
+      "confidence": 0.88,
+      "reason": "High-trust source (Field Responder) — immediate action."
+    }
+  },
+  {
+    "id": 8,
+    "incident_id": "INC001",
+    "type": "New Hazard Spotted",
+    "description": "Landslide near sector 17",
+    "source": "Police Officer",
+    "trust_score": 0.85,
+    "location": "Sector 17",
+    "road": null,
+    "timestamp": "2026-06-12 17:28:29",
+    "unix_time": 1781265509.6817422,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "CREATE_NEW_INCIDENT",
+      "location": "Sector 17",
+      "confidence": 0.85,
+      "reason": "New hazard reported by Police Officer at Sector 17."
+    }
+  },
+  {
+    "id": 9,
+    "incident_id": "INC001",
+    "type": "Rescue Completed",
+    "description": "All civilians evacuated from Zone A",
+    "source": "NDRF Responder",
+    "trust_score": 0.93,
+    "location": null,
+    "road": null,
+    "timestamp": "2026-06-12 17:28:29",
+    "unix_time": 1781265509.683742,
+    "verified": true,
+    "duplicate": false,
+    "recommended_action": {
+      "action": "MARK_RESOLVED",
+      "confidence": 0.93,
+      "reason": "Rescue confirmed by NDRF Responder."
+    }
+  }
+]

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3bf3cf7cf451ecace99937940b65269 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;background:white;padding:8px 14px;border-radius:6px;border:2px solid red;font-size:13px;line-height:1.7;"><b>Risk: High</b> (97.0%)<br>Zone: <b>CRITICAL</b> &nbsp;|&nbsp; Radius: 6.17 km</div>
+    
+            <div class="folium-map" id="map_c3bf3cf7cf451ecace99937940b65269" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c3bf3cf7cf451ecace99937940b65269 = L.map(
+                "map_c3bf3cf7cf451ecace99937940b65269",
+                {
+                    center: [30.3165, 78.0322],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe80f1cc023b6b0a0d6f216813969423 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fe80f1cc023b6b0a0d6f216813969423.addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+            var marker_6bf9c7ba6a6d1e456962df75858098f2 = L.marker(
+                [30.3165, 78.0322],
+                {
+}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+            var icon_8e5ac78ae7fac870ffa3422cdd88610d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4bc38885010240547cd9235b286ec4e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c05f5861571c8bc75dbab2e53f5c6da4 = $(`<div id="html_c05f5861571c8bc75dbab2e53f5c6da4" style="width: 100.0%; height: 100.0%;"><b>⚠ Flood</b><br>Severity : High<br>Risk     : High (97.0%)<br>Zone     : CRITICAL</div>`)[0];
+                popup_e4bc38885010240547cd9235b286ec4e.setContent(html_c05f5861571c8bc75dbab2e53f5c6da4);
+            
+        
+
+        marker_6bf9c7ba6a6d1e456962df75858098f2.bindPopup(popup_e4bc38885010240547cd9235b286ec4e)
+        ;
+
+        
+    
+    
+            marker_6bf9c7ba6a6d1e456962df75858098f2.bindTooltip(
+                `<div>
+                     ⚠ Rajpur Road, Dehradun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bf9c7ba6a6d1e456962df75858098f2.setIcon(icon_8e5ac78ae7fac870ffa3422cdd88610d);
+            
+    
+            var circle_eb6e66b2575378d70f4b3ab69efa6d8b = L.circle(
+                [30.3165, 78.0322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6170.0, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_f691372a150709a26749580d41f8e265 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_447e3af11e9a8098796f14aca84f139f = $(`<div id="html_447e3af11e9a8098796f14aca84f139f" style="width: 100.0%; height: 100.0%;">Affected area ≈ 6.17 km (dynamic)</div>`)[0];
+                popup_f691372a150709a26749580d41f8e265.setContent(html_447e3af11e9a8098796f14aca84f139f);
+            
+        
+
+        circle_eb6e66b2575378d70f4b3ab69efa6d8b.bindPopup(popup_f691372a150709a26749580d41f8e265)
+        ;
+
+        
+    
+    
+            var circle_marker_6f8c70bc8b23606b637f9bc5d28ed7e2 = L.circleMarker(
+                [30.3162, 78.0322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_a95e9cf8873ab403b691cbfb1d2427ff = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_53d9e9f799b10387f8875acb96187e28 = $(`<div id="html_53d9e9f799b10387f8875acb96187e28" style="width: 100.0%; height: 100.0%;"><b>Coronation Hospital</b><br>Type: Hospital<br>Distance: 0.03 km</div>`)[0];
+                popup_a95e9cf8873ab403b691cbfb1d2427ff.setContent(html_53d9e9f799b10387f8875acb96187e28);
+            
+        
+
+        circle_marker_6f8c70bc8b23606b637f9bc5d28ed7e2.bindPopup(popup_a95e9cf8873ab403b691cbfb1d2427ff)
+        ;
+
+        
+    
+    
+            circle_marker_6f8c70bc8b23606b637f9bc5d28ed7e2.bindTooltip(
+                `<div>
+                     Coronation Hospital (0.03 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b861b8e7adafb7ce1808a2d4e5e7858e = L.circleMarker(
+                [30.3212, 78.038],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_ef6437348d84991528341ed2fedc9352 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_0df87fb49bc55f5105667ccf44ca2469 = $(`<div id="html_0df87fb49bc55f5105667ccf44ca2469" style="width: 100.0%; height: 100.0%;"><b>Police Headquarters</b><br>Type: Police Station<br>Distance: 0.76 km</div>`)[0];
+                popup_ef6437348d84991528341ed2fedc9352.setContent(html_0df87fb49bc55f5105667ccf44ca2469);
+            
+        
+
+        circle_marker_b861b8e7adafb7ce1808a2d4e5e7858e.bindPopup(popup_ef6437348d84991528341ed2fedc9352)
+        ;
+
+        
+    
+    
+            circle_marker_b861b8e7adafb7ce1808a2d4e5e7858e.bindTooltip(
+                `<div>
+                     Police Headquarters (0.76 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11c7b0defe016496e246061439fa5b61 = L.circleMarker(
+                [30.3245, 78.0417],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_d05cea27d9ad4db963b87ff1f48da900 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_20e7e0d80119013229695957c5e3facd = $(`<div id="html_20e7e0d80119013229695957c5e3facd" style="width: 100.0%; height: 100.0%;"><b>Fire Station Central</b><br>Type: Fire Station<br>Distance: 1.27 km</div>`)[0];
+                popup_d05cea27d9ad4db963b87ff1f48da900.setContent(html_20e7e0d80119013229695957c5e3facd);
+            
+        
+
+        circle_marker_11c7b0defe016496e246061439fa5b61.bindPopup(popup_d05cea27d9ad4db963b87ff1f48da900)
+        ;
+
+        
+    
+    
+            circle_marker_11c7b0defe016496e246061439fa5b61.bindTooltip(
+                `<div>
+                     Fire Station Central (1.27 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8cd86983678943fda1f21bf4f3c4e6ea = L.circleMarker(
+                [30.3255, 78.0421],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_f04aafe44218ba7c6cbf7d44eeb59114 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_de20ad0184eed819916e0e8efbcb599f = $(`<div id="html_de20ad0184eed819916e0e8efbcb599f" style="width: 100.0%; height: 100.0%;"><b>Doon Hospital</b><br>Type: Hospital<br>Distance: 1.38 km</div>`)[0];
+                popup_f04aafe44218ba7c6cbf7d44eeb59114.setContent(html_de20ad0184eed819916e0e8efbcb599f);
+            
+        
+
+        circle_marker_8cd86983678943fda1f21bf4f3c4e6ea.bindPopup(popup_f04aafe44218ba7c6cbf7d44eeb59114)
+        ;
+
+        
+    
+    
+            circle_marker_8cd86983678943fda1f21bf4f3c4e6ea.bindTooltip(
+                `<div>
+                     Doon Hospital (1.38 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b206d1583f301b61673303fed3dab185 = L.circleMarker(
+                [30.3025, 78.0322],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_b6ff5de0b34bcfae29f9dab63e1a0444 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_1942a409f86299cd6e832bfef3b31d3a = $(`<div id="html_1942a409f86299cd6e832bfef3b31d3a" style="width: 100.0%; height: 100.0%;"><b>Shelter B</b><br>Type: Shelter<br>Distance: 1.55 km</div>`)[0];
+                popup_b6ff5de0b34bcfae29f9dab63e1a0444.setContent(html_1942a409f86299cd6e832bfef3b31d3a);
+            
+        
+
+        circle_marker_b206d1583f301b61673303fed3dab185.bindPopup(popup_b6ff5de0b34bcfae29f9dab63e1a0444)
+        ;
+
+        
+    
+    
+            circle_marker_b206d1583f301b61673303fed3dab185.bindTooltip(
+                `<div>
+                     Shelter B (1.55 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_337e43acd0abecfaff1c69f6aa330fc6 = L.circleMarker(
+                [30.336, 78.038],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_463090a089b03d67a129297fa4b24787 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_06414192be3c6e0dbcf35f976638aa20 = $(`<div id="html_06414192be3c6e0dbcf35f976638aa20" style="width: 100.0%; height: 100.0%;"><b>Shelter A</b><br>Type: Shelter<br>Distance: 2.23 km</div>`)[0];
+                popup_463090a089b03d67a129297fa4b24787.setContent(html_06414192be3c6e0dbcf35f976638aa20);
+            
+        
+
+        circle_marker_337e43acd0abecfaff1c69f6aa330fc6.bindPopup(popup_463090a089b03d67a129297fa4b24787)
+        ;
+
+        
+    
+    
+            circle_marker_337e43acd0abecfaff1c69f6aa330fc6.bindTooltip(
+                `<div>
+                     Shelter A (2.23 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e55d840ccbdbf3d61dbada95f89c67d4 = L.circleMarker(
+                [30.2983, 78.0462],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_d61b5d525535d177dd74ae4519607938 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_2b8c8f7d1ba491efa3bcec4a0a8ab0d2 = $(`<div id="html_2b8c8f7d1ba491efa3bcec4a0a8ab0d2" style="width: 100.0%; height: 100.0%;"><b>Rescue Center South</b><br>Type: Rescue Center<br>Distance: 2.43 km</div>`)[0];
+                popup_d61b5d525535d177dd74ae4519607938.setContent(html_2b8c8f7d1ba491efa3bcec4a0a8ab0d2);
+            
+        
+
+        circle_marker_e55d840ccbdbf3d61dbada95f89c67d4.bindPopup(popup_d61b5d525535d177dd74ae4519607938)
+        ;
+
+        
+    
+    
+            circle_marker_e55d840ccbdbf3d61dbada95f89c67d4.bindTooltip(
+                `<div>
+                     Rescue Center South (2.43 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a54520e7e614e4a308c11277f67628ca = L.circleMarker(
+                [30.3408, 78.0524],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_c3bf3cf7cf451ecace99937940b65269);
+        
+    
+        var popup_3e41593a3f03e3bc7324e0c0cc06c0a8 = L.popup({
+  "maxWidth": 180,
+});
+
+        
+            
+                var html_a9a5e46472ed5a9c63a295c23d30439a = $(`<div id="html_a9a5e46472ed5a9c63a295c23d30439a" style="width: 100.0%; height: 100.0%;"><b>Fire Station East</b><br>Type: Fire Station<br>Distance: 3.32 km</div>`)[0];
+                popup_3e41593a3f03e3bc7324e0c0cc06c0a8.setContent(html_a9a5e46472ed5a9c63a295c23d30439a);
+            
+        
+
+        circle_marker_a54520e7e614e4a308c11277f67628ca.bindPopup(popup_3e41593a3f03e3bc7324e0c0cc06c0a8)
+        ;
+
+        
+    
+    
+            circle_marker_a54520e7e614e4a308c11277f67628ca.bindTooltip(
+                `<div>
+                     Fire Station East (3.32 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
